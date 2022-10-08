@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "baloo";
+    src: url(../font/BalooDa-Regular.ttf);
+}
+:root {
+    --color-primary: #0060df;
+    --color-secondary: #fbfbfe;
+    --color-accent: #fd6f53;
+    --font-color: #000000;
+    --bg_color: #ffffff;
+}
+body {
+    background-color: rebeccapurple;
+    font-family: "Inter", sans-serif;
+}
+
+/* header */
+header {
+    height: 61px;
+    width: 100%;
+    -moz-box-pack: justify;
+    background-color: var(--bg_color);
+    position: relative;
+    z-index: 1046;
+}
+.header_main {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+.header_main a {
+    display: flex;
+    align-items: center;
+}
+button {
+    font-family: "Baloo Da 2", cursive;
+    font-weight: 500;
+}
+.logo_name {
+    display: none;
+}
+.nav_button_wrapper {
+    display: flex;
+}
+.button_wrapper {
+    display: flex;
+    align-items: center;
+}
+.cur_btn {
+    display: none;
+}
+.connect_btn {
+    text-align: center;
+    outline: currentcolor none medium;
+    font-family: "baloo";
+    text-decoration: none;
+    -moz-box-pack: center;
+    white-space: nowrap;
+    padding: 0 2.5px 0px 0;
+    font-size: 15.4px;
+    width: 164.083px;
+    height: 45px;
+    -moz-box-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    letter-spacing: 1;
+    user-select: none;
+    font-weight: 500;
+    background-color: rgb(172, 86, 42);
+    border: 1px solid rgba(172, 86, 42, 0.44);
+    color: rgb(255, 253, 250);
+}
+.offcanvas {
+    margin-top: 61px;
+}
+.setting_btn {
+    width: 36px;
+    height: 35px;
+    margin-left: 0.5rem;
+    border: medium none;
+    background-color: rgb(238, 217, 204);
+    border-radius: 10px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+.setting_btn svg {
+    color: rgb(114, 47, 13);
+    width: 20px;
+    margin-top: -1px;
+    height: 20px;
+}
+
+@media screen and (min-width: 500px) {
+    .logo_name {
+        display: block;
+    }
+    .cur_btn {
+        display: block;
+    }
+}
