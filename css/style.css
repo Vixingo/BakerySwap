@@ -1,162 +1,194 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 @font-face {
-    font-family: "baloo";
-    src: url(../font/BalooDa-Regular.ttf);
+  font-family: "baloo";
+  src: url(../font/BalooDa-Regular.ttf);
 }
 :root {
-    --color-primary: #0060df;
-    --color-secondary: #fbfbfe;
-    --color-accent: #fd6f53;
-    --font-color: #000000;
-    --bg_color: #ffffff;
+  --color-primary: #0060df;
+  --color-secondary: #fbfbfe;
+  --color-accent: #fd6f53;
+  --font-color: #000000;
+  --bg_color: #ffffff;
 }
 body {
-    background-color: rebeccapurple;
-    font-family: "Inter", sans-serif;
+  background: url(../img/image-bg2.jpg);
+  font-family: "Inter", sans-serif;
+  background-size: cover;
 }
 
 /* header */
 header {
-    height: 61px;
-    width: 100%;
-    -moz-box-pack: justify;
-    background: var(--bg_color);
-    box-shadow: rgba(171, 133, 115, 0.16) 0px 2px 10px;
-    position: relative;
-    z-index: 1046;
+  height: 61px;
+  width: 100%;
+  -moz-box-pack: justify;
+  background: var(--bg_color);
+  box-shadow: rgba(171, 133, 115, 0.16) 0px 2px 10px;
+  position: relative;
+  z-index: 1046;
 }
 .header_main {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
 }
 .header_main a {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 button {
-    font-family: "Baloo Da 2", cursive;
-    font-weight: 500;
+  font-family: "Baloo Da 2", cursive;
+  font-weight: 500;
 }
 .logo_name {
-    display: none;
+  display: none;
 }
 .nav_button_wrapper {
-    display: flex;
-    margin-top: -4px;
+  display: flex;
+  margin-top: -4px;
 }
 .nav_btn {
-    background: none;
-    border: none;
-    margin-left: 12px;
+  background: none;
+  border: none;
+  margin-left: 12px;
 }
 .logo-wrapper {
-    margin-left: 40px;
+  margin-left: 40px;
 }
 .logo {
-    width: 32px;
-    height: 32px;
+  width: 32px;
+  height: 32px;
 }
 .button_wrapper {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .cur_btn {
-    display: none;
+  display: none;
 }
 .connect_btn {
-    text-align: center;
-    outline: currentcolor none medium;
-    font-family: "baloo";
-    text-decoration: none;
-    -moz-box-pack: center;
-    white-space: nowrap;
-    padding: 0 2.5px 0px 0;
-    font-size: 15.4px;
-    width: 164.083px;
-    height: 45px;
-    -moz-box-align: center;
-    border-radius: 10px;
-    cursor: pointer;
-    letter-spacing: 1;
-    user-select: none;
-    font-weight: 500;
-    background-color: rgb(172, 86, 42);
-    border: 1px solid rgba(172, 86, 42, 0.44);
-    color: rgb(255, 253, 250);
+  text-align: center;
+  outline: currentcolor none medium;
+  font-family: "baloo";
+  text-decoration: none;
+  -moz-box-pack: center;
+  white-space: nowrap;
+  padding: 0 2.5px 0px 0;
+  font-size: 15.4px;
+  width: 164.083px;
+  height: 45px;
+  -moz-box-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  letter-spacing: 1;
+  user-select: none;
+  font-weight: 500;
+  background-color: rgb(172, 86, 42);
+  border: 1px solid rgba(172, 86, 42, 0.44);
+  color: rgb(255, 253, 250);
 }
 .offcanvas {
-    margin-top: 61px;
+  margin-top: 61px;
 }
 .setting_btn {
-    width: 36px;
-    height: 35px;
-    margin-left: 0.5rem;
-    border: medium none;
-    background-color: rgb(238, 217, 204);
-    border-radius: 10px;
-    padding: 8px;
-    display: flex;
-    align-items: center;
+  width: 36px;
+  height: 35px;
+  margin-left: 0.5rem;
+  border: medium none;
+  background-color: rgb(238, 217, 204);
+  border-radius: 10px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
 }
 .setting_btn svg {
-    color: rgb(114, 47, 13);
-    width: 20px;
-    margin-top: -1px;
-    height: 20px;
+  color: rgb(114, 47, 13);
+  width: 20px;
+  margin-top: -1px;
+  height: 20px;
 }
 /* offcanvas nav */
 #offcanvasExample {
-    width: 268px;
-    transition: width 0.15s linear 0s;
+  width: 268px;
+  transition: width 0.15s linear 0s;
 }
 .offcanvas-body {
-    padding: 0;
+  padding: 0;
 }
 .nav-link {
-    display: flex;
-    width: 100%;
-    color: rgb(117, 77, 56);
-    line-height: 54px;
-    cursor: pointer;
-    position: relative;
-    padding: 0 20px;
-    margin: 10px 0;
-    align-items: center;
-    vertical-align: middle;
-    font-weight: 600;
+  display: flex;
+  width: 100%;
+  color: rgb(117, 77, 56);
+  line-height: 54px;
+  cursor: pointer;
+  position: relative;
+  padding: 0 20px;
+  margin: 10px 0;
+  align-items: center;
+  vertical-align: middle;
+  font-weight: 600;
 }
 .nav-link img {
-    width: 24px;
-    height: 24px;
+  width: 24px;
+  height: 24px;
 }
 .nav-link span {
-    margin-left: 8px;
+  margin-left: 8px;
 }
 .nav-link .left_icon {
-    height: 8px;
-    position: absolute;
-    right: 12px;
-    transform: rotate(90deg);
-    margin: auto;
+  height: 8px;
+  position: absolute;
+  right: 12px;
+  transform: rotate(90deg);
+  margin: auto;
 }
 .active-link {
-    color: rgb(255, 255, 255);
-    background: linear-gradient(
-        305.04deg,
-        rgb(255, 214, 0) -43.12%,
-        rgb(255, 122, 0) 70.33%
-    );
+  color: rgb(255, 255, 255);
+  background: linear-gradient(
+    305.04deg,
+    rgb(255, 214, 0) -43.12%,
+    rgb(255, 122, 0) 70.33%
+  );
 }
+/* body */
+/* intro */
+.ex_btn {
+  background: linear-gradient(
+    285.72deg,
+    rgb(255, 214, 0) -21.15%,
+    rgb(255, 122, 0) 60.61%
+  );
+  border-radius: 50px;
+  color: rgb(255, 255, 255);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 105.9%;
+  width: 172px;
+  height: 40px;
+  border: none;
+  padding: 12px 18px;
+  text-align: center;
+  outline: currentcolor none medium;
+  border: 1px solid transparent;
+}
+.cr_btn {
+  width: 172px;
+  height: 40px;
+  border-radius: 50px;
+  color: rgb(255, 122, 0);
+  background-color: transparent;
+  border: 1px solid rgb(239, 129, 49);
+}
+
 @media screen and (min-width: 500px) {
-    .logo_name {
-        display: block;
-    }
-    .cur_btn {
-        display: block;
-    }
+  .logo_name {
+    display: block;
+  }
+  .cur_btn {
+    display: block;
+  }
 }

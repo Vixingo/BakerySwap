@@ -1,136 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-        <!-- CSS only -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="./css/style.css" />
-        <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-            rel="stylesheet"
-        />
-        <title>BakerySwap</title>
-    </head>
-    <body>
-        <header>
-            <div class="header_main">
-                <div class="nav_button_wrapper">
-                    <button
-                        class="nav_btn"
-                        type="button"
-                        data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasExample"
-                        aria-controls="offcanvasExample"
-                    >
-                        <img src="img/nav_icons/fold.svg" alt="" />
-                    </button>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-                    <a href="#" class="logo-wrapper">
-                        <div class="logo">
-                            <img src="img/logo1.svg" width="100%" alt="" />
-                        </div>
-                        <div class="logo_name">
-                            <img src="img/logo2.svg" alt="" />
-                        </div>
-                    </a>
-                </div>
-                <div class="button_wrapper">
-                    <button class="cur_btn">BSC</button>
-                    <button class="connect_btn">Connect to a wallet</button>
-                    <button class="setting_btn">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="sc-cHGsZl kDPYLZ"
-                        >
-                            <circle cx="12" cy="12" r="3"></circle>
-                            <path
-                                d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"
-                            ></path>
-                        </svg>
-                    </button>
-                </div>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>BakerySwap</title>
+  </head>
+  <body>
+    <header>
+      <div class="header_main">
+        <div class="nav_button_wrapper">
+          <button
+            class="nav_btn"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
+          >
+            <img src="img/nav_icons/fold.svg" alt="" />
+          </button>
+
+          <a href="#" class="logo-wrapper">
+            <div class="logo">
+              <img src="img/logo1.svg" width="100%" alt="" />
             </div>
-        </header>
-
-        <div
-            class="offcanvas offcanvas-start"
-            tabindex="-1"
-            id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel"
-        >
-            <div class="offcanvas-body">
-                <nav>
-                    <a class="nav-link active-link" href="#">
-                        <img src="./img/nav_icons/home.svg" alt="" />
-                        <span>Home</span></a
-                    >
-                    <a class="nav-link" href="#"
-                        ><img src="./img/nav_icons/trade.svg" alt="" /><span
-                            >Trade</span
-                        >
-                        <img
-                            src="./img/nav_icons/triangle_left.svg"
-                            alt=""
-                            class="left_icon"
-                    /></a>
-                    <a class="nav-link" href="#">
-                        <img src="./img/nav_icons/earning.svg" alt="" /><span
-                            >Earning</span
-                        ></a
-                    >
-                    <a class="nav-link" href="#"
-                        ><img src="./img/nav_icons/nft.svg" alt="" /><span
-                            >NFT Marketplace</span
-                        ><img
-                            src="./img/nav_icons/triangle_left.svg"
-                            alt=""
-                            class="left_icon"
-                    /></a>
-                    <a class="nav-link" href="#"
-                        ><img src="./img/nav_icons/game.svg" alt="" /><span>
-                            Gamification
-                        </span>
-                    </a>
-                    <a class="nav-link" href="#"
-                        ><img src="./img/nav_icons/info.svg" alt="" /><span>
-                            Info</span
-                        ></a
-                    >
-                    <a class="nav-link" href="#"
-                        ><img src="./img/nav_icons/contact.svg" alt="" /><span>
-                            Contact</span
-                        ><img
-                            src="./img/nav_icons/triangle_left.svg"
-                            alt=""
-                            class="left_icon"
-                    /></a>
-                </nav>
+            <div class="logo_name">
+              <img src="img/logo2.svg" alt="" />
             </div>
+          </a>
         </div>
+        <div class="button_wrapper">
+          <button class="cur_btn">BSC</button>
+          <button class="connect_btn">Connect to a wallet</button>
+          <button class="setting_btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="sc-cHGsZl kDPYLZ"
+            >
+              <circle cx="12" cy="12" r="3"></circle>
+              <path
+                d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
 
-        <!-- JavaScript Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-body">
+        <nav>
+          <a class="nav-link active-link" href="#">
+            <img src="./img/nav_icons/home.svg" alt="" />
+            <span>Home</span></a
+          >
+          <a class="nav-link" href="#"
+            ><img src="./img/nav_icons/trade.svg" alt="" /><span>Trade</span>
+            <img
+              src="./img/nav_icons/triangle_left.svg"
+              alt=""
+              class="left_icon"
+          /></a>
+          <a class="nav-link" href="#">
+            <img src="./img/nav_icons/earning.svg" alt="" /><span
+              >Earning</span
+            ></a
+          >
+          <a class="nav-link" href="#"
+            ><img src="./img/nav_icons/nft.svg" alt="" /><span
+              >NFT Marketplace</span
+            ><img
+              src="./img/nav_icons/triangle_left.svg"
+              alt=""
+              class="left_icon"
+          /></a>
+          <a class="nav-link" href="#"
+            ><img src="./img/nav_icons/game.svg" alt="" /><span>
+              Gamification
+            </span>
+          </a>
+          <a class="nav-link" href="#"
+            ><img src="./img/nav_icons/info.svg" alt="" /><span> Info</span></a
+          >
+          <a class="nav-link" href="#"
+            ><img src="./img/nav_icons/contact.svg" alt="" /><span>
+              Contact</span
+            ><img
+              src="./img/nav_icons/triangle_left.svg"
+              alt=""
+              class="left_icon"
+          /></a>
+        </nav>
+      </div>
+    </div>
+    <!-- Body -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="true"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/banner1.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./img/banner2.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./img/banner1.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- intro -->
+    <section class="intro">
+      <div class="container">
+        <h1>Trade your favourite NFTs now!</h1>
+        <p>On BSC’s first & largest marketplace</p>
+        <button class="ex_btn">Explore</button>
+        <button class="cr_btn">Create</button>
+      </div>
+    </section>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
