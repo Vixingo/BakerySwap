@@ -24,7 +24,8 @@ header {
     height: 61px;
     width: 100%;
     -moz-box-pack: justify;
-    background-color: var(--bg_color);
+    background: var(--bg_color);
+    box-shadow: rgba(171, 133, 115, 0.16) 0px 2px 10px;
     position: relative;
     z-index: 1046;
 }
@@ -46,6 +47,19 @@ button {
 }
 .nav_button_wrapper {
     display: flex;
+    margin-top: -4px;
+}
+.nav_btn {
+    background: none;
+    border: none;
+    margin-left: 12px;
+}
+.logo-wrapper {
+    margin-left: 40px;
+}
+.logo {
+    width: 32px;
+    height: 32px;
 }
 .button_wrapper {
     display: flex;
@@ -95,7 +109,49 @@ button {
     margin-top: -1px;
     height: 20px;
 }
-
+/* offcanvas nav */
+#offcanvasExample {
+    width: 268px;
+    transition: width 0.15s linear 0s;
+}
+.offcanvas-body {
+    padding: 0;
+}
+.nav-link {
+    display: flex;
+    width: 100%;
+    color: rgb(117, 77, 56);
+    line-height: 54px;
+    cursor: pointer;
+    position: relative;
+    padding: 0 20px;
+    margin: 10px 0;
+    align-items: center;
+    vertical-align: middle;
+    font-weight: 600;
+}
+.nav-link img {
+    width: 24px;
+    height: 24px;
+}
+.nav-link span {
+    margin-left: 8px;
+}
+.nav-link .left_icon {
+    height: 8px;
+    position: absolute;
+    right: 12px;
+    transform: rotate(90deg);
+    margin: auto;
+}
+.active-link {
+    color: rgb(255, 255, 255);
+    background: linear-gradient(
+        305.04deg,
+        rgb(255, 214, 0) -43.12%,
+        rgb(255, 122, 0) 70.33%
+    );
+}
 @media screen and (min-width: 500px) {
     .logo_name {
         display: block;

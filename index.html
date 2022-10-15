@@ -30,6 +30,7 @@
             <div class="header_main">
                 <div class="nav_button_wrapper">
                     <button
+                        class="nav_btn"
                         type="button"
                         data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasExample"
@@ -38,9 +39,9 @@
                         <img src="img/nav_icons/fold.svg" alt="" />
                     </button>
 
-                    <a href="#">
-                        <div>
-                            <img src="img/logo1.svg" alt="" />
+                    <a href="#" class="logo-wrapper">
+                        <div class="logo">
+                            <img src="img/logo1.svg" width="100%" alt="" />
                         </div>
                         <div class="logo_name">
                             <img src="img/logo2.svg" alt="" />
@@ -80,30 +81,52 @@
             aria-labelledby="offcanvasExampleLabel"
         >
             <div class="offcanvas-body">
-                <div>
-                    Some text as placeholder. In real life you can have the
-                    elements you have chosen. Like, text, images, lists, etc.
-                </div>
-                <div class="dropdown mt-3">
-                    <button
-                        class="btn btn-secondary dropdown-toggle"
-                        type="button"
-                        data-bs-toggle="dropdown"
+                <nav>
+                    <a class="nav-link active-link" href="#">
+                        <img src="./img/nav_icons/home.svg" alt="" />
+                        <span>Home</span></a
                     >
-                        Dropdown button
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                            <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#"
-                                >Something else here</a
-                            >
-                        </li>
-                    </ul>
-                </div>
+                    <a class="nav-link" href="#"
+                        ><img src="./img/nav_icons/trade.svg" alt="" /><span
+                            >Trade</span
+                        >
+                        <img
+                            src="./img/nav_icons/triangle_left.svg"
+                            alt=""
+                            class="left_icon"
+                    /></a>
+                    <a class="nav-link" href="#">
+                        <img src="./img/nav_icons/earning.svg" alt="" /><span
+                            >Earning</span
+                        ></a
+                    >
+                    <a class="nav-link" href="#"
+                        ><img src="./img/nav_icons/nft.svg" alt="" /><span
+                            >NFT Marketplace</span
+                        ><img
+                            src="./img/nav_icons/triangle_left.svg"
+                            alt=""
+                            class="left_icon"
+                    /></a>
+                    <a class="nav-link" href="#"
+                        ><img src="./img/nav_icons/game.svg" alt="" /><span>
+                            Gamification
+                        </span>
+                    </a>
+                    <a class="nav-link" href="#"
+                        ><img src="./img/nav_icons/info.svg" alt="" /><span>
+                            Info</span
+                        ></a
+                    >
+                    <a class="nav-link" href="#"
+                        ><img src="./img/nav_icons/contact.svg" alt="" /><span>
+                            Contact</span
+                        ><img
+                            src="./img/nav_icons/triangle_left.svg"
+                            alt=""
+                            class="left_icon"
+                    /></a>
+                </nav>
             </div>
         </div>
 
